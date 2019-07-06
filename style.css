@@ -1,0 +1,145 @@
+body {
+    display: grid;
+    grid-template-areas: 'header header header header' 'section section section section' 'footer footer footer footer';
+    grid-template-rows: 47vh 45vh 8vh;
+    grid-template-columns: 35vw 30vw 29vw;
+    /* grid-gap: 0.5vh; */
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header {
+    position: absolute;
+    grid-area: header;
+    border-top: 8px solid #2CBF60;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+}
+
+header img {
+    width: 100%;
+    height: 510px;
+}
+
+.devices_header {
+    position: absolute;
+    top: 130px;
+    left: 280px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.devices_header p {
+    color: #fff;
+    font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+    width: 400px;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: 'Pacifico', cursive;
+    margin: 0;
+    color: #fff;
+}
+
+h1::after {
+    content: ".";
+    color: #2CBF60;
+}
+
+.devices_header img {
+    width: 22px;
+    height: 22px;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    top: 5px;
+}
+
+.devices_header a {
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .4);
+    padding: 12px;
+    margin: 0;
+    margin-right: 10px;
+}
+
+.devices_header a:hover {
+    background-color: #2CBF60;
+}
+
+.icons_device {
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.hand {
+    position: absolute;
+    top: 80px;
+    left: 770px;
+    width: 370px;
+    height: 430px;
+}
+
+
+/* ======================================== */
+
+section {
+    grid-area: section;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    padding: 30px;
+}
+
+.sobre {
+    width: 280px;
+    height: auto;
+    background-color: rgba(173, 173, 173, 0.322);
+    position: relative;
+    top: 518px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sobre img {
+    background-color: #2CBF60;
+    padding: 20px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.sobre h2 {
+    margin-bottom: 5px;
+}
+
+.sobre p {
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+    line-height: 20px;
+}
+
+
+/* ================================== */
+
+footer {
+    grid-area: footer;
+    background-color: yellow;
+    position: relative;
+    top: 155px;
+}
+
+
+/* ============================= */
